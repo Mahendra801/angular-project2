@@ -1,0 +1,12 @@
+<form [formGroup]="login">
+    <label> Name:
+        <input type="text" formControlName="name" placeholder="name">
+    </label><br><br>
+    <label> pass:
+        <input type="password" formControlName="password" placeholder="pass">
+    </label><br><br>
+    <button (click)="loginform(login)">login</button>
+    <div><span>Don't have an Account?</span><p routerlink="class" style="cursor: pointer;"></p></div>
+</form>
+
+<button type="button"><a routerLink="/Registerform">Register here</a></button>
